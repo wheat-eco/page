@@ -6,7 +6,8 @@ export function Footer() {
   return (
     <footer className="border-t border-white/10">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="gri
+d grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <Image
@@ -26,8 +27,8 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-sm text-white/70 hover:text-white">Features</Link></li>
-              <li><Link href="#" className="text-sm text-white/70 hover:text-white">Roadmap</Link></li>
+              <li><Link href="#features" className="text-sm text-white/70 hover:text-white">Features</Link></li>
+              <li><Link href="#roadmap" className="text-sm text-white/70 hover:text-white">Roadmap</Link></li>
               <li><Link href="#" className="text-sm text-white/70 hover:text-white">Documentation</Link></li>
             </ul>
           </div>
@@ -35,7 +36,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-sm text-white/70 hover:text-white">About</Link></li>
+              <li><Link href="#about" className="text-sm text-white/70 hover:text-white">About</Link></li>
               <li><Link href="#" className="text-sm text-white/70 hover:text-white">Blog</Link></li>
               <li><Link href="#" className="text-sm text-white/70 hover:text-white">Careers</Link></li>
             </ul>
@@ -48,10 +49,12 @@ export function Footer() {
                  className="p-2 glass-card hover:bg-white/10 transition-colors">
                 <GithubIcon className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 glass-card hover:bg-white/10 transition-colors">
+              <a href="https://x.com/wheat_sol?t=vRnkwR8uVOXmpYRqNllCRA&s=09" target="_blank" rel="noopener noreferrer" 
+                 className="p-2 glass-card hover:bg-white/10 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 glass-card hover:bg-white/10 transition-colors">
+              <a href="https://t.me/swhit_tg" target="_blank" rel="noopener noreferrer" 
+                 className="p-2 glass-card hover:bg-white/10 transition-colors">
                 <Send className="w-5 h-5" />
               </a>
             </div>
