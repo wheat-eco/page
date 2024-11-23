@@ -2,42 +2,39 @@ export function RoadmapSection() {
   const roadmapItems = [
     {
       phase: "Phase 1",
-      title: "Foundation",
+      title: "Token Launch",
       items: [
-        "Initial platform development",
-        "Smart contract architecture",
-        "Security audits",
-        "Community building"
+        "Deploy $SWHIT on Linea Testnet",
+        "Set up smart contracts",
+        "Build foundational community across social platforms"
       ]
     },
     {
       phase: "Phase 2",
-      title: "Growth",
+      title: "Presale and Airdrop",
       items: [
-        "Token launch on Linea",
-        "Partnership expansions",
-        "Ecosystem integration",
-        "Governance implementation"
+        "Launch presale with clear structure",
+        "Maximize participation",
+        "Distribute airdrops to early adopters and contributors"
       ]
     },
     {
       phase: "Phase 3",
-      title: "Expansion",
+      title: "Mainnet Deployment",
       items: [
-        "Cross-chain functionality",
-        "Advanced features rollout",
-        "Market expansion",
-        "Enhanced security measures"
+        "Transition $SWHIT to Linea Mainnet",
+        "Lock liquidity",
+        "Launch DEX listings",
+        "Initial marketing campaigns"
       ]
     },
     {
       phase: "Phase 4",
-      title: "Maturity",
+      title: "Ecosystem Expansion",
       items: [
-        "Full decentralization",
-        "Global adoption initiatives",
-        "Advanced governance features",
-        "Ecosystem sustainability"
+        "Introduce integrations with other blockchains (e.g., Aptos)",
+        "Develop real-world use cases for $SWHIT",
+        "Expand partnerships and collaborations"
       ]
     }
   ]
