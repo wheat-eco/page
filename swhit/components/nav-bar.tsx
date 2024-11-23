@@ -25,16 +25,16 @@ export function NavBar() {
             <Link href="#features" className="text-sm hover:text-white/80 transition-colors">
               Features
             </Link>
+            <Link href="#tokenomics" className="text-sm hover:text-white/80 transition-colors">
+              Tokenomics
+            </Link>
             <Link href="#roadmap" className="text-sm hover:text-white/80 transition-colors">
               Roadmap
-            </Link>
-            <Link href="#ecosystem" className="text-sm hover:text-white/80 transition-colors">
-              Ecosystem
             </Link>
           </div>
 
           <Button className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm">
-            Launch App
+            BUY $SWHIT
           </Button>
         </div>
       </div>
