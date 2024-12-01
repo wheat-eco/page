@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { GithubIcon, Twitter, Send } from 'lucide-react'
 import Image from "next/image"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -24,8 +25,14 @@ export function HeroSection() {
             <Button className="bg-white text-black hover:bg-white/90">
               Get Started
             </Button>
-            <Button variant="outline" className="border-white/20">
-              Read Docs
+            <Button 
+              variant="outline" 
+              className="border-white/20"
+              asChild
+            >
+              <Link href="https://github.com/wheat-eco/wheat-eco" target="_blank" rel="noopener noreferrer">
+                Whitepaper
+              </Link>
             </Button>
           </div>
           <div className="flex justify-center gap-4 mt-8">
