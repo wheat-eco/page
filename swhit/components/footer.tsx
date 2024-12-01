@@ -29,7 +29,7 @@ d grid-cols-1 md:grid-cols-4 gap-8">
             <ul className="space-y-2">
               <li><Link href="#features" className="text-sm text-white/70 hover:text-white">Features</Link></li>
               <li><Link href="#roadmap" className="text-sm text-white/70 hover:text-white">Roadmap</Link></li>
-              <li><Link href="#" className="text-sm text-white/70 hover:text-white">Documentation</Link></li>
+              <li><Link href="#" className="text-sm text-white/70 hover:text-white">Whitepapaer</Link></li>
             </ul>
           </div>
           
@@ -49,7 +49,7 @@ d grid-cols-1 md:grid-cols-4 gap-8">
                  className="p-2 glass-card hover:bg-white/10 transition-colors">
                 <GithubIcon className="w-5 h-5" />
               </a>
-              <a href="https://x.com/wheat_sol?t=vRnkwR8uVOXmpYRqNllCRA&s=09" target="_blank" rel="noopener noreferrer" 
+              <a href="https://x.com/wheat_linea?t=FybI6aWhBAc8pnX0tFn4NA&s=09" target="_blank" rel="noopener noreferrer" 
                  className="p-2 glass-card hover:bg-white/10 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
