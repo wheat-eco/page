@@ -29,7 +29,7 @@ d grid-cols-1 md:grid-cols-4 gap-8">
             <ul className="space-y-2">
               <li><Link href="#features" className="text-sm text-white/70 hover:text-white">Features</Link></li>
               <li><Link href="#roadmap" className="text-sm text-white/70 hover:text-white">Roadmap</Link></li>
-              <li><Link href="#" className="text-sm text-white/70 hover:text-white">Whitepapaer</Link></li>
+              <li><Link href="https://github.com/wheat-eco/wheat-eco" className="text-sm text-white/70 hover:text-white">Whitepapaer</Link></li>
             </ul>
           </div>
           
