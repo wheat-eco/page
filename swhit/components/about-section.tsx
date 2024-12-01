@@ -10,7 +10,7 @@ export function AboutSection() {
         <Card className="glass-card border-0">
           <CardContent className="p-6">
             <p className="text-white/80 text-lg leading-relaxed">
-              WheatChain is redefining the future of Decentralized Finance (DeFi) with its innovative ecosystem powered by Wheat-sol ($SWHIT). Our mission is to create a sustainable financial platform where users can secure their wealth, participate in transparent systems, and build towards a future of stability and growth. By blending blockchain technology with real-world financial use cases, WheatChain empowers individuals globally to take control of their financial journeys. Whether you're staking, transacting, or leveraging GeoInstant solutions for fast and borderless financial operations, WheatChain is your gateway to a decentralized, secure, and equitable financial future.
+              WheatChain is redefining the future of Decentralized Finance (DeFi) with its innovative ecosystem powered by Wheat-sol ($SWHIT). Our mission is to create a sustainable financial platform where users can secure their wealth, participate in transparent systems, and build towards a future of stability and growth. By blending blockchain technology with real-world financial use cases, WheatChain empowers individuals globally to take control of their financial journeys. Whether you&apos;re staking, transacting, or leveraging GeoInstant solutions for fast and borderless financial operations, WheatChain is your gateway to a decentralized, secure, and equitable financial future.
             </p>
           </CardContent>
         </Card>
