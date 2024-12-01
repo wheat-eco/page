@@ -2,11 +2,11 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function TokenomicsSection() {
   const tokenomics = [
-    { label: "Team Allocation", value: "10%", description: "Vested for stability" },
-    { label: "Future Development", value: "10%" },
-    { label: "Airdrop and Community Rewards", value: "20%" },
-    { label: "Presale", value: "15%" },
-    { label: "Circulating Supply", value: "45%", description: "Liquidity pool and exchanges" }
+    { label: "User Rewards Pool", value: "40%", description: "Released over time based on platform activity" },
+    { label: "Team and Advisors", value: "15%", description: "1-year vesting with 6-months cliff" },
+    { label: "Development Fund", value: "20%", description: "2-year vesting, released quarterly" },
+    { label: "Community Treasury", value: "15%", description: "Controlled by DAO governance" },
+    { label: "Presale", value: "10%", description: "2-month linear vesting after TGE" }
   ]
 
   return (
