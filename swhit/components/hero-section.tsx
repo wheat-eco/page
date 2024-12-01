@@ -33,7 +33,7 @@ export function HeroSection() {
                className="p-2 glass-card hover:bg-white/10 transition-colors">
               <GithubIcon className="w-6 h-6" />
             </a>
-            <a href="https://x.com/wheat_sol?t=vRnkwR8uVOXmpYRqNllCRA&s=09" target="_blank" rel="noopener noreferrer" 
+            <a href="https://x.com/wheat_linea?t=El1Z9LruRi3hA7gfDx7Yew&s=09" target="_blank" rel="noopener noreferrer" 
                className="p-2 glass-card hover:bg-white/10 transition-colors">
               <Twitter className="w-6 h-6" />
             </a>
