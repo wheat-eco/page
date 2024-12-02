@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 export function NavBar() {
   return (
@@ -17,7 +17,7 @@ export function NavBar() {
             />
             <span className="text-xl font-bold glow-text">WHEAT-SOL</span>
           </Link>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             <Link href="#about" className="text-sm hover:text-white/80 transition-colors">
               About
@@ -32,15 +32,14 @@ export function NavBar() {
               Roadmap
             </Link>
           </div>
-<link href="/buy">
-          <Button className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm">
-            
-            BUY $SWHIT
-            </link>
-            
-          </Button>
+
+          <Link href="/buy">
+            <Button className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm">
+              BUY $SWHIT
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
-  )
+  );
 }
