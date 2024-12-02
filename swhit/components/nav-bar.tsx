@@ -34,7 +34,10 @@ export function NavBar() {
           </div>
 
           <Button className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm">
+            <link href="/buy">
             BUY $SWHIT
+            </link>
+            
           </Button>
         </div>
       </div>
