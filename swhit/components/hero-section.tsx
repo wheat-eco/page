@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { GithubIcon, Twitter, Send } from 'lucide-react'
 import Image from "next/image"
-import Link from "next/link"
+
 
 export function HeroSection() {
   return (
