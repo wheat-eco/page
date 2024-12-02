@@ -17,9 +17,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.7",
-    "rehype-raw": "^7.0.0",
-    "rehype-sanitize": "^6.0.0",
-    "remark-gfm": "^4.0.0",
+    "rehype-raw": "^6.1.1",
+    "rehype-sanitize": "^5.0.1",
+    "remark-gfm": "^3.0.1",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -33,4 +33,5 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
+}
 }
