@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { GithubIcon, Twitter, Send } from 'lucide-react'
 import Image from "next/image"
+import { useRouter } from 'next/router';
+
 
 
 export function HeroSection() {
