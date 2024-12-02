@@ -7,6 +7,7 @@ import { AboutSection } from "@/components/about-section"
 import { Footer } from "@/components/footer"
 import { Whitepaper } from "@/components/whitepaper"
 
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -23,4 +24,3 @@ export default function Home() {
     </div>
   )
 }
-
