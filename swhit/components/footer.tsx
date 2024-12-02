@@ -29,7 +29,7 @@ d grid-cols-1 md:grid-cols-4 gap-8">
             <ul className="space-y-2">
               <li><Link href="#features" className="text-sm text-white/70 hover:text-white">Features</Link></li>
               <li><Link href="#roadmap" className="text-sm text-white/70 hover:text-white">Roadmap</Link></li>
-              <li><Link href="https://github.com/wheat-eco/wheat-eco" className="text-sm text-white/70 hover:text-white">Whitepapaer</Link></li>
+              <li><Link href="/whitepaper" className="text-sm text-white/70 hover:text-white">Whitepapaer</Link></li>
             </ul>
           </div>
           
@@ -37,8 +37,8 @@ d grid-cols-1 md:grid-cols-4 gap-8">
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><Link href="#about" className="text-sm text-white/70 hover:text-white">About</Link></li>
-              <li><Link href="#" className="text-sm text-white/70 hover:text-white">Blog</Link></li>
-              <li><Link href="#" className="text-sm text-white/70 hover:text-white">Careers</Link></li>
+              <li><Link href="/blog" className="text-sm text-white/70 hover:text-white">Blog</Link></li>
+              
             </ul>
           </div>
           
