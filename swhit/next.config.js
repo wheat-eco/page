@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    domains: ['github.com', 'raw.githubusercontent.com'],
+    remotePatterns: ['github.com', 'raw.githubusercontent.com'],
   },
 }
 
