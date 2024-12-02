@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
 
-function NavBar() {
+export function NavBar() {
   return (
     <nav className="bg-gray-800">
       <ul className="flex justify-between items-center p-4">
@@ -24,16 +26,5 @@ function NavBar() {
         </li>
       </ul>
     </nav>
-  );
+  )
 }
-
-function Button({ children, className, ...props }) {
-  return (
-    <button className={`px-4 py-2 rounded-md ${className}`} {...props}>
-      {children}
-    </button>
-  );
-}
-
-export default NavBar;
-
