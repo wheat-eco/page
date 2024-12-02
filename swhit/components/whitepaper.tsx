@@ -499,17 +499,17 @@ export function Whitepaper() {
       <ReactMarkdown 
         remarkPlugins={[remarkGfm]}
         components={{
-          h1: ({node, ...props}) => <h1 className="text-3xl font-bold mb-4" {...props} />,
-          h2: ({node, ...props}) => <h2 className="text-2xl font-semibold mt-8 mb-4" {...props} />,
-          h3: ({node, ...props}) => <h3 className="text-xl font-semibold mt-6 mb-3" {...props} />,
-          p: ({node, ...props}) => <p className="mb-4" {...props} />,
-          ul: ({node, ...props}) => <ul className="list-disc pl-5 mb-4" {...props} />,
-          ol: ({node, ...props}) => <ol className="list-decimal pl-5 mb-4" {...props} />,
-          li: ({node, ...props}) => <li className="mb-2" {...props} />,
-          table: ({node, ...props}) => <div className="overflow-x-auto mb-4"><table className="min-w-full border-collapse border border-gray-300" {...props} /></div>,
-          th: ({node, ...props}) => <th className="border border-gray-300 px-4 py-2 bg-gray-100" {...props} />,
-          td: ({node, ...props}) => <td className="border border-gray-300 px-4 py-2" {...props} />,
-          a: ({node, ...props}) => <a className="text-blue-500 hover:underline" {...props} />,
+          h1: ({...props}) => <h1 className="text-3xl font-bold mb-4" {...props} />,
+          h2: ({...props}) => <h2 className="text-2xl font-semibold mt-8 mb-4" {...props} />,
+          h3: ({...props}) => <h3 className="text-xl font-semibold mt-6 mb-3" {...props} />,
+          p: ({...props}) => <p className="mb-4" {...props} />,
+          ul: ({...props}) => <ul className="list-disc pl-5 mb-4" {...props} />,
+          ol: ({...props}) => <ol className="list-decimal pl-5 mb-4" {...props} />,
+          li: ({...props}) => <li className="mb-2" {...props} />,
+          table: ({...props}) => <div className="overflow-x-auto mb-4"><table className="min-w-full border-collapse border border-gray-300" {...props} /></div>,
+          th: ({...props}) => <th className="border border-gray-300 px-4 py-2 bg-gray-100" {...props} />,
+          td: ({...props}) => <td className="border border-gray-300 px-4 py-2" {...props} />,
+          a: ({...props}) => <a className="text-blue-500 hover:underline" {...props} />,
         }}
       >
         {whitepaperContent}
@@ -518,4 +518,3 @@ export function Whitepaper() {
   );
 }
 
-          
