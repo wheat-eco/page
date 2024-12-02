@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { GithubIcon, Twitter, Send } from 'lucide-react'
 import Image from "next/image"
-import { useRouter } from 'next/router';
-
-
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -27,12 +25,14 @@ export function HeroSection() {
             <Button className="bg-white text-black hover:bg-white/90">
               Get Started
             </Button>
-               <Button
-              variant="outline"
+            <Button 
+              variant="outline" 
               className="border-white/20"
-              onClick={() => router.push('/whitepaper')}
+              asChild
             >
-              Whitepaper
+              <Link href="/whitepaper">
+                Whitepaper
+              </Link>
             </Button>
           </div>
           <div className="flex justify-center gap-4 mt-8">
