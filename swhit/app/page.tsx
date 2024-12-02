@@ -5,7 +5,11 @@ import { RoadmapSection } from "@/components/roadmap-section"
 import { TokenomicsSection } from "@/components/tokenomics-section"
 import { AboutSection } from "@/components/about-section"
 import { Footer } from "@/components/footer"
-import { Whitepaper } from "@/components/whitepaper"
+
+const DynamicWhitepaper = dynamic(() => import('@/components/whitepaper').then(mod => mod.Whitepaper), {
+  ssr: false,
+  loading: () => <p>Loading whitepaper...</p>
+})
 
 
 export default function Home() {
@@ -18,7 +22,7 @@ export default function Home() {
         <FeaturesSection />
         <TokenomicsSection />
         <RoadmapSection />
-        <Whitepaper />
+        <DynamicWhitepaper />
       </main>
       <Footer />
     </div>
