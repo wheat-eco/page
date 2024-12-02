@@ -23,7 +23,9 @@ export function HeroSection() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button className="bg-white text-black hover:bg-white/90">
+              <Link href="/buy">
               Buy SWHIT
+                </Link>
             </Button>
             <Button 
               variant="outline" 
