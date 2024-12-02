@@ -25,14 +25,12 @@ export function HeroSection() {
             <Button className="bg-white text-black hover:bg-white/90">
               Get Started
             </Button>
-            <Button 
-              variant="outline" 
+               <Button
+              variant="outline"
               className="border-white/20"
-              asChild
+              onClick={() => router.push('/whitepaper')}
             >
-              <Link href="https://github.com/wheat-eco/wheat-eco" target="_blank" rel="noopener noreferrer">
-                Whitepaper
-              </Link>
+              Whitepaper
             </Button>
           </div>
           <div className="flex justify-center gap-4 mt-8">
