@@ -2,9 +2,17 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    remotePatterns: ['github.com', 'raw.githubusercontent.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+      },
+    ],
   },
-}
+};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
