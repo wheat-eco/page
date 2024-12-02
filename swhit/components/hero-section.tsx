@@ -10,20 +10,20 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center">
           <Image
             src="/wheatsol.jpg"
-            alt="WheatSol Logo"
+            alt="Wheat-Sol Logo"
             width={120}
             height={120}
             className="mx-auto mb-8 wheat-icon"
           />
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text">
-            Building the Future of WheatChain
+            Wheat-Sol (SWHIT): Powering the Future of DeFi
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Revolutionizing DeFi on Linea with sustainable, efficient, and secure blockchain solutions. Join us in shaping the future of decentralized finance.
+            Experience the next generation of social engagement and decentralized finance with Wheat-Sol. Earn rewards, participate in governance, and shape the future of Web3 on the Linea blockchain.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button className="bg-white text-black hover:bg-white/90">
-              Get Started
+              Buy SWHIT
             </Button>
             <Button 
               variant="outline" 
