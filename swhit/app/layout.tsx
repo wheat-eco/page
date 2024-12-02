@@ -1,13 +1,13 @@
+import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'WheatSol - Building the Future of WheatChain',
   description: 'Revolutionizing DeFi on Linea with sustainable, efficient, and secure blockchain solutions. Join us in shaping the future of decentralized finance.',
-  metadataBase: new URL('https://swhit.vercel.app'),
+  metadataBase: new URL('https://wheatchain.xyz'),
   openGraph: {
     title: 'WheatSol - Building the Future of WheatChain',
     description: 'Revolutionizing DeFi on Linea with sustainable, efficient, and secure blockchain solutions. Join us in shaping the future of decentralized finance.',
@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>{children}</body>
     </html>
   )
