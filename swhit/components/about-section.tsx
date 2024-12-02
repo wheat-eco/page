@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"; // Ensure this import path is correct
 
 export function AboutSection() {
   return (
@@ -16,11 +16,11 @@ export function AboutSection() {
               With a total supply of 500,000,000 SWHIT, the token powers a comprehensive reward system, governance mechanisms, and various DeFi features. Users can earn SWHIT through content creation, engagement, community challenges, and by providing liquidity to DeFi pools.
             </p>
             <p className="text-white/80 text-lg leading-relaxed">
-              SWHIT token holders can participate in platform governance, access premium features, use the token for tipping creators, stake for additional rewards, and leverage it within the ecosystem&apos;s DeFi protocols./p>
+              SWHIT token holders can participate in platform governance, access premium features, use the token for tipping creators, stake for additional rewards, and leverage it within the ecosystem&apos;s DeFi protocols. As WheatChain evolves, SWHIT will play a crucial role in bridging social interaction with financial empowerment in the Web3 space.
+            </p>
           </CardContent>
         </Card>
       </div>
     </section>
-  )
+  );
 }
-
