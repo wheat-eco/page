@@ -4,7 +4,17 @@ import { NavBar } from "@/components/nav-bar"
 import { Footer } from "@/components/footer"
 import { useParams } from 'next/navigation'
 
-const blogPosts = {
+interface BlogPost {
+  title: string
+  content: string
+  date: string
+}
+
+interface BlogPosts {
+  [key: string]: BlogPost
+}
+
+const blogPosts: BlogPosts = {
   "wheat-sol-what-weve-come-to-do": {
     title: "Wheat-Sol ($SWHIT): What We've Come to Do",
     content: `
@@ -35,13 +45,13 @@ const blogPosts = {
       <p>#WheatSol #SWHIT #DeFi #CryptoUtility</p>
     `,
     date: "2024-12-05"
-  },
-  // Add more blog posts here as they become available
+  }
 }
 
 export default function BlogPost() {
-  const { slug } = useParams()
-  const post = blogPosts[slug as string]
+  const params = useParams()
+  const slug = typeof params?.slug === 'string' ? params.slug : ''
+  const post = blogPosts[slug]
 
   if (!post) {
     return <div>Post not found</div>
