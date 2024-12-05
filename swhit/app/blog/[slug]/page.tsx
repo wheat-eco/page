@@ -4,7 +4,6 @@ import { NavBar } from "@/components/nav-bar"
 import { Footer } from "@/components/footer"
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import Image from 'next/image'
 
 interface BlogPost {
   title: string
@@ -18,65 +17,84 @@ interface BlogPosts {
 
 const blogPosts: BlogPosts = {
   "wheat-sol-what-weve-come-to-do": {
-    title: "Wheat-Sol ($SWHIT): Revolutionizing Social Engagement and DeFi",
+    title: "Wheat-Sol ($SWHIT): Building Trust and Revolutionizing DeFi",
     content: `
       <div class="space-y-8">
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-white">Introducing Wheat-Sol: More Than Just an Airdrop</h2>
-          <p class="text-gray-300">Wheat-Sol ($SWHIT) isn&apos;t just another token or a simple airdrop. We&apos;re a revolutionary platform designed for the entire community, aiming to redefine the intersection of social engagement and decentralized finance (DeFi).</p>
-          <div class="relative w-full h-64 rounded-lg overflow-hidden">
-            <img
-              src="/placeholder.svg?height=256&width=512"
-              alt="Wheat-Sol Platform Concept"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <h2 class="text-2xl font-bold text-white">Introducing Wheat-Sol: A Commitment to Transparency and Innovation</h2>
+          <p class="text-gray-300">At Wheat-Sol, we understand that trust is the foundation of any successful blockchain project. That's why we're committed to complete transparency in everything we do. From our code to our communications, we believe in open, honest dialogue with our community.</p>
         </section>
 
         <section class="space-y-6">
-          <h3 class="text-xl font-semibold text-white">Our Vision and Mission</h3>
-          <p class="text-gray-300">At Wheat-Sol, we recognize that we might not be perfect, but we&apos;re here with a clear purpose: to create positive change in the world of blockchain and beyond. Our mission is to build a platform that truly values and rewards its community while driving innovation in the blockchain industry.</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="bg-gray-800 p-4 rounded-lg">
-              <h4 class="text-lg font-semibold text-white mb-2">User-Centric Rewards</h4>
-              <p class="text-gray-300">Earn SWHIT tokens for your contributions and engagement on the platform.</p>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg">
-              <h4 class="text-lg font-semibold text-white mb-2">Decentralized Governance</h4>
-              <p class="text-gray-300">Participate in key decision-making processes that shape the future of Wheat-Sol.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="space-y-6">
-          <h3 class="text-xl font-semibold text-white">Key Features of Wheat-Sol</h3>
-          <ul class="list-disc list-inside space-y-2 text-gray-300">
-            <li>Blockchain-based social engagement platform</li>
-            <li>Integrated DeFi features including DEX, yield farming, and lending</li>
-            <li>Community-driven development and governance</li>
-            <li>Robust security measures and compliance standards</li>
-            <li>Future plans for WheatChain, our own blockchain</li>
+          <h3 class="text-xl font-semibold text-white">Our Vision: Beyond Just Another Token</h3>
+          <p class="text-gray-300">Wheat-Sol ($SWHIT) isn't just another token or a simple airdrop. We're building a comprehensive ecosystem that bridges social engagement with decentralized finance (DeFi). Here's how we're different:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+            <li>Transparent Development: Our codebase is open-source, allowing for community review and contribution.</li>
+            <li>Regular Updates: We commit to weekly development updates, keeping our community informed of our progress.</li>
+            <li>Community-Driven Governance: Major decisions are put to community vote, ensuring your voice is heard.</li>
+            <li>Sustainable Tokenomics: Our token distribution and emission schedule are designed for long-term stability.</li>
           </ul>
         </section>
 
+        <section class="space-y-6">
+          <h3 class="text-xl font-semibold text-white">Building Trust Through Action</h3>
+          <p class="text-gray-300">We believe actions speak louder than words. Here are concrete steps we're taking to build and maintain your trust:</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h4 class="text-lg font-semibold text-white mb-2">Third-Party Audits</h4>
+              <p class="text-gray-300">We've partnered with reputable security firms to conduct regular audits of our smart contracts and platform infrastructure.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h4 class="text-lg font-semibold text-white mb-2">Transparent Treasury Management</h4>
+              <p class="text-gray-300">Our treasury wallet addresses are public, and we provide monthly reports on fund allocation and usage.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h4 class="text-lg font-semibold text-white mb-2">Gradual Token Unlocks</h4>
+              <p class="text-gray-300">Team and advisor tokens are subject to a multi-year vesting schedule, aligning our interests with the community's long-term success.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h4 class="text-lg font-semibold text-white mb-2">Community-First Development</h4>
+              <p class="text-gray-300">We regularly host AMAs, developer calls, and community feedback sessions to ensure we're building what truly matters to you.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-6">
+          <h3 class="text-xl font-semibold text-white">Our Roadmap: Committed to Delivery</h3>
+          <p class="text-gray-300">We believe in setting realistic goals and consistently delivering on our promises. Here's a glimpse of our upcoming milestones:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+            <li>Q1 2025: Launch of Wheat-Sol social engagement platform beta</li>
+            <li>Q2 2025: Integration of DeFi features including staking and yield farming</li>
+            <li>Q3 2025: Introduction of governance mechanisms for community-driven decision making</li>
+            <li>Q4 2025: Initiation of WheatChain testnet, our proprietary blockchain solution</li>
+          </ul>
+          <p class="text-gray-300">We're committed to regular updates on our progress towards these goals, including any challenges we face along the way.</p>
+        </section>
+
         <section class="space-y-4">
-          <h3 class="text-xl font-semibold text-white">Join the Wheat-Sol Revolution</h3>
-          <p class="text-gray-300">We invite users, developers, investors, and partners to join us in shaping the future of social engagement and decentralized finance. Together, we can build a more equitable, transparent, and rewarding ecosystem for all.</p>
-          <div class="flex space-x-4">
+          <h3 class="text-xl font-semibold text-white">Join the Wheat-Sol Community</h3>
+          <p class="text-gray-300">We invite you to be part of our journey. Whether you're a developer, investor, or crypto enthusiast, there's a place for you in the Wheat-Sol ecosystem. Here's how you can get involved:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+            <li>Join our Telegram group for real-time updates and community discussions</li>
+            <li>Follow us on Twitter for the latest news and announcements</li>
+            <li>Participate in our upcoming community calls and AMAs</li>
+            <li>Review our codebase on GitHub and contribute to our open-source initiatives</li>
+          </ul>
+          <div class="flex space-x-4 mt-4">
             <a href="https://t.me/swhit_tg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Join our Telegram
+              Join Telegram
             </a>
             <a href="https://x.com/wheat_linea?t=uYAmigt6Zsaks7p0NeofPw&s=09" target="_blank" rel="noopener noreferrer" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
-              Follow us on Twitter
+              Follow on Twitter
             </a>
           </div>
         </section>
 
         <section class="space-y-4">
-          <h3 class="text-xl font-semibold text-white">The Road Ahead</h3>
-          <p class="text-gray-300">Our journey is just beginning. In the coming weeks and months, we&apos;ll be sharing more details about our innovative reward system, our plans for WheatChain, and how Wheat-Sol is set to make a lasting impact in the world of crypto.</p>
-          <p class="text-gray-300">Stay tuned, engage with us, and be part of the Wheat-Sol revolution. Together, we&apos;re cultivating a new era of decentralized social finance.</p>
-          <p class="text-blue-400">#WheatSol #SWHIT #DeFi #CryptoRevolution</p>
+          <h3 class="text-xl font-semibold text-white">Conclusion: Building a Trustworthy Future Together</h3>
+          <p class="text-gray-300">At Wheat-Sol, we're not just building a platform; we're cultivating a community based on trust, transparency, and shared success. We know that earning your trust is an ongoing process, and we're committed to that journey every step of the way.</p>
+          <p class="text-gray-300">Join us as we work towards a more equitable, transparent, and rewarding future in decentralized finance. Together, we can redefine what's possible in the world of crypto.</p>
+          <p class="text-blue-400">#WheatSol #SWHIT #TrustInDeFi #CommunityDriven</p>
         </section>
       </div>
     `,
