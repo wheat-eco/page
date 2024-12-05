@@ -14,17 +14,38 @@ interface BlogPostPreviewProps {
 
 export function BlogPostPreview({ post }: BlogPostPreviewProps) {
   return (
-    <div className="bg-gray-900 p-6 rounded-lg">
-      <h2 className="text-2xl font-bold text-white mb-2">{post.title}</h2>
-      <p className="text-gray-400 mb-4">{post.date}</p>
-      <p className="text-gray-300 mb-4">{post.excerpt}</p>
-      <Link 
-        href={`/blog/${post.slug}`}
-        className="text-blue-400 hover:text-blue-300 transition-colors"
-      >
-        Read more →
-      </Link>
-    </div>
+    <Link 
+      href={`/blog/${post.slug}`}
+      className="block group"
+    >
+      <article className="space-y-4 p-6 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
+        <div className="space-y-2">
+          <time className="text-sm text-gray-400">{post.date}</time>
+          <h2 className="text-2xl font-bold text-white group-hover:text-gray-300 transition-colors line-clamp-2">
+            {post.title}
+          </h2>
+        </div>
+        <p className="text-gray-400 line-clamp-3">
+          {post.excerpt}
+        </p>
+        <div className="flex items-center text-blue-400 group-hover:text-blue-300 transition-colors">
+          <span>Read more</span>
+          <svg
+            className="ml-1 w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+      </article>
+    </Link>
   )
 }
 
