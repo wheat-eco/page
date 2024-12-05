@@ -25,11 +25,10 @@ const blogPosts: BlogPosts = {
           <h2 class="text-2xl font-bold text-white">Introducing Wheat-Sol: More Than Just an Airdrop</h2>
           <p class="text-gray-300">Wheat-Sol ($SWHIT) isn&apos;t just another token or a simple airdrop. We&apos;re a revolutionary platform designed for the entire community, aiming to redefine the intersection of social engagement and decentralized finance (DeFi).</p>
           <div class="relative w-full h-64 rounded-lg overflow-hidden">
-            <Image
+            <img
               src="/placeholder.svg?height=256&width=512"
               alt="Wheat-Sol Platform Concept"
-              layout="fill"
-              objectFit="cover"
+              className="w-full h-full object-cover"
             />
           </div>
         </section>
@@ -64,12 +63,12 @@ const blogPosts: BlogPosts = {
           <h3 class="text-xl font-semibold text-white">Join the Wheat-Sol Revolution</h3>
           <p class="text-gray-300">We invite users, developers, investors, and partners to join us in shaping the future of social engagement and decentralized finance. Together, we can build a more equitable, transparent, and rewarding ecosystem for all.</p>
           <div class="flex space-x-4">
-            <Link href="https://t.me/swhit_tg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+            <a href="https://t.me/swhit_tg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
               Join our Telegram
-            </Link>
-            <Link href="https://x.com/wheat_linea?t=uYAmigt6Zsaks7p0NeofPw&s=09" target="_blank" rel="noopener noreferrer" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
+            </a>
+            <a href="https://x.com/wheat_linea?t=uYAmigt6Zsaks7p0NeofPw&s=09" target="_blank" rel="noopener noreferrer" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
               Follow us on Twitter
-            </Link>
+            </a>
           </div>
         </section>
 
