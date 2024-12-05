@@ -4,6 +4,7 @@ import { NavBar } from "@/components/nav-bar"
 import { Footer } from "@/components/footer"
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface BlogPost {
   title: string
@@ -17,57 +18,66 @@ interface BlogPosts {
 
 const blogPosts: BlogPosts = {
   "wheat-sol-what-weve-come-to-do": {
-    title: "Wheat-Sol ($SWHIT): What We&apos;ve Come to Do",
+    title: "Wheat-Sol ($SWHIT): Revolutionizing Social Engagement and DeFi",
     content: `
       <div class="space-y-8">
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-white">We are Wheat-Sol, and we&apos;re here to redefine the crypto landscape.</h2>
-          <p class="text-gray-300">We&apos;re not just another token &ndash; we&apos;re a utility coin with a clear mission and a commitment to longevity. Here&apos;s what we&apos;ve come to do:</p>
+          <h2 class="text-2xl font-bold text-white">Introducing Wheat-Sol: More Than Just an Airdrop</h2>
+          <p class="text-gray-300">Wheat-Sol ($SWHIT) isn&apos;t just another token or a simple airdrop. We&apos;re a revolutionary platform designed for the entire community, aiming to redefine the intersection of social engagement and decentralized finance (DeFi).</p>
+          <div class="relative w-full h-64 rounded-lg overflow-hidden">
+            <Image
+              src="/placeholder.svg?height=256&width=512"
+              alt="Wheat-Sol Platform Concept"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </section>
 
         <section class="space-y-6">
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white">1. Revolutionize Social Engagement</h3>
-            <p class="text-gray-300">We&apos;re bridging the gap between social interaction and decentralized finance. Our platform rewards users for their contributions and engagement, creating a truly user-centric ecosystem.</p>
+          <h3 class="text-xl font-semibold text-white">Our Vision and Mission</h3>
+          <p class="text-gray-300">At Wheat-Sol, we recognize that we might not be perfect, but we&apos;re here with a clear purpose: to create positive change in the world of blockchain and beyond. Our mission is to build a platform that truly values and rewards its community while driving innovation in the blockchain industry.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h4 class="text-lg font-semibold text-white mb-2">User-Centric Rewards</h4>
+              <p class="text-gray-300">Earn SWHIT tokens for your contributions and engagement on the platform.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+              <h4 class="text-lg font-semibold text-white mb-2">Decentralized Governance</h4>
+              <p class="text-gray-300">Participate in key decision-making processes that shape the future of Wheat-Sol.</p>
+            </div>
           </div>
+        </section>
 
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white">2. Deliver Real Utility</h3>
-            <p class="text-gray-300">$SWHIT is no meme coin. It&apos;s the backbone of our ecosystem, powering a range of DeFi features from staking to lending, all integrated seamlessly with our social platform.</p>
-          </div>
+        <section class="space-y-6">
+          <h3 class="text-xl font-semibold text-white">Key Features of Wheat-Sol</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-300">
+            <li>Blockchain-based social engagement platform</li>
+            <li>Integrated DeFi features including DEX, yield farming, and lending</li>
+            <li>Community-driven development and governance</li>
+            <li>Robust security measures and compliance standards</li>
+            <li>Future plans for WheatChain, our own blockchain</li>
+          </ul>
+        </section>
 
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white">3. Ensure Long-Term Profitability</h3>
-            <p class="text-gray-300">We&apos;re not here for quick gains. Our tokenomics and development roadmap are designed to create sustainable value for all participants in the Wheat-Sol ecosystem.</p>
-          </div>
-
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white">4. Build a Lasting Community</h3>
-            <p class="text-gray-300">We&apos;re here to stay, forever. Our goal is to foster a strong, engaged community that grows and evolves with our platform.</p>
-          </div>
-
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white">5. Innovate in the DeFi Space</h3>
-            <p class="text-gray-300">From our current home on the Linea blockchain to our future plans for WheatChain, we&apos;re committed to pushing the boundaries of what&apos;s possible in decentralized finance.</p>
-          </div>
-
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white">6. Educate and Empower</h3>
-            <p class="text-gray-300">We believe in transparency and education. We&apos;re here to explain, to clarify, and to help everyone understand the potential of our project and the broader DeFi landscape.</p>
-          </div>
-
-          <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white">7. Create Win-Win Scenarios</h3>
-            <p class="text-gray-300">Our success is your success. We&apos;ve structured Wheat-Sol so that as we grow, our entire community benefits.</p>
+        <section class="space-y-4">
+          <h3 class="text-xl font-semibold text-white">Join the Wheat-Sol Revolution</h3>
+          <p class="text-gray-300">We invite users, developers, investors, and partners to join us in shaping the future of social engagement and decentralized finance. Together, we can build a more equitable, transparent, and rewarding ecosystem for all.</p>
+          <div class="flex space-x-4">
+            <Link href="https://t.me/swhit_tg" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Join our Telegram
+            </Link>
+            <Link href="https://x.com/wheat_linea?t=uYAmigt6Zsaks7p0NeofPw&s=09" target="_blank" rel="noopener noreferrer" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
+              Follow us on Twitter
+            </Link>
           </div>
         </section>
 
         <section class="space-y-4">
-          <p class="text-gray-300">In the coming weeks, we&apos;ll be diving deeper into each aspect of our project. From our innovative reward system to our plans for WheatChain, we&apos;ll break down how Wheat-Sol is set to make a lasting impact in the world of crypto.</p>
-          
+          <h3 class="text-xl font-semibold text-white">The Road Ahead</h3>
+          <p class="text-gray-300">Our journey is just beginning. In the coming weeks and months, we&apos;ll be sharing more details about our innovative reward system, our plans for WheatChain, and how Wheat-Sol is set to make a lasting impact in the world of crypto.</p>
           <p class="text-gray-300">Stay tuned, engage with us, and be part of the Wheat-Sol revolution. Together, we&apos;re cultivating a new era of decentralized social finance.</p>
-          
-          <p class="text-blue-400">#WheatSol #SWHIT #DeFi #CryptoUtility</p>
+          <p class="text-blue-400">#WheatSol #SWHIT #DeFi #CryptoRevolution</p>
         </section>
       </div>
     `,
