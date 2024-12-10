@@ -3,98 +3,161 @@
 import { useState } from 'react'
 import { NavBar } from "@/components/nav-bar"
 import { Footer } from "@/components/footer"
-import { Github, Twitter, Send } from 'lucide-react'
-import Link from "next/link"
+import { Wallet, Timer, ArrowRightLeft, Info, ChevronDown, EclipseIcon as Ethereum } from 'lucide-react'
+import { Progress } from "@/components/ui/progress"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 export default function BuyPage() {
-  const [ethAmount, setEthAmount] = useState('')
-  const [swhitAmount, setSwhitAmount] = useState('')
+  const [selectedNetwork, setSelectedNetwork] = useState('ethereum')
+  const [amount, setAmount] = useState('')
+  const [progress] = useState(15) // Example progress percentage
+  
+  // Example ETH price - In production this would come from an API
+  const ethPrice = 2300 // USD
+  const tokenPriceUSDT = 0.0025
+  const tokenPriceETH = tokenPriceUSDT / ethPrice
 
-  const handleEthChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value
-    setEthAmount(value)
-    setSwhitAmount((parseFloat(value) / 0.0025).toString())
-  }
-
-  const handleSwhitChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value
-    setSwhitAmount(value)
-    setEthAmount((parseFloat(value) * 0.0025).toString())
+  const calculateTokens = (amount: string) => {
+    if (!amount) return '0'
+    return (parseFloat(amount) / tokenPriceETH).toFixed(2)
   }
 
   return (
     <div className="min-h-screen bg-black">
       <NavBar />
-      <main className="flex flex-col items-center justify-center flex-1 px-4 py-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-6">
-          Buy SWHIT Token
-        </h1>
-        <div className="w-full max-w-md bg-gray-900 p-6 rounded-lg shadow-lg">
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-white mb-2">Presale Information</h2>
-            <p className="text-gray-400">Total Supply: 50,000,000 SWHIT</p>
-            <p className="text-gray-400">Price: 0.0025 ETH per SWHIT</p>
-          </div>
-          <div className="mb-6">
-            <label htmlFor="eth-amount" className="block text-sm font-medium text-gray-400 mb-2">
-              Enter ETH Amount
-            </label>
-            <input
-              type="number"
-              id="eth-amount"
-              className="w-full px-3 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={ethAmount}
-              onChange={handleEthChange}
-              placeholder="0.0"
+      <main className="container mx-auto px-4 pt-24 pb-16">
+        <div className="flex flex-col items-center mb-12">
+          <div className="flex items-center gap-4 mb-8">
+            <img 
+              src="/placeholder.svg" 
+              alt="WHEAT-SOL" 
+              className="w-16 h-16 rounded-full"
             />
+            <h1 className="text-5xl font-bold text-white">Buy $SWHIT</h1>
           </div>
-          <div className="mb-6">
-            <label htmlFor="swhit-amount" className="block text-sm font-medium text-gray-400 mb-2">
-              SWHIT to Receive
-            </label>
-            <input
-              type="number"
-              id="swhit-amount"
-              className="w-full px-3 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={swhitAmount}
-              onChange={handleSwhitChange}
-              placeholder="0.0"
-            />
-          </div>
-          <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
-            Buy SWHIT Tokens
-          </button>
-          <p className="text-sm text-gray-400 mt-4">
-            You can buy using Ethereum or Linea ETH. Connect your wallet to proceed with the purchase.
-          </p>
-        </div>
-        <div className="max-w-2xl text-center mt-8">
-          <p className="text-lg text-gray-400 mb-4">
-            For the latest updates and more information, please check our social media channels:
-          </p>
-        </div>
-        <div className="flex gap-6">
-          <Link
-            href="https://github.com/wheat-eco"
-            className="bg-gray-900 p-3 rounded-lg hover:bg-gray-800 transition-colors"
-            target="_blank"
-          >
-            <Github className="w-6 h-6 text-white" />
-          </Link>
-          <Link
-            href="https://x.com/wheat_linea?t=VzMVVaKnp45pv4a_TsC5TQ&s=09"
-            className="bg-gray-900 p-3 rounded-lg hover:bg-gray-800 transition-colors"
-            target="_blank"
-          >
-            <Twitter className="w-6 h-6 text-white" />
-          </Link>
-          <Link
-            href="https://t.me/swhit_tg"
-            className="bg-gray-900 p-3 rounded-lg hover:bg-gray-800 transition-colors"
-            target="_blank"
-          >
-            <Send className="w-6 h-6 text-white" />
-          </Link>
+          
+          {/* Timer Section */}
+          <Card className="w-full max-w-3xl bg-gray-900/50 border-gray-800 mb-8">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl text-white">Presale Launches In</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-4 gap-4 text-center">
+                {['20', '13', '37', '11'].map((value, index) => (
+                  <div key={index} className="bg-gray-800 p-4 rounded-lg">
+                    <span className="text-3xl font-bold text-white block">{value}</span>
+                    <span className="text-gray-400 text-sm">
+                      {['DAYS', 'HOURS', 'MINUTES', 'SECONDS'][index]}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Main Purchase Card */}
+          <Card className="w-full max-w-3xl bg-gray-900/50 border-gray-800">
+            <CardHeader>
+              <div className="flex justify-between items-center mb-4">
+                <CardTitle className="text-xl text-white">Presale Information</CardTitle>
+                <Button variant="outline" className="gap-2">
+                  <Wallet className="w-4 h-4" />
+                  Connect Wallet
+                </Button>
+              </div>
+              <CardDescription>
+                <div className="space-y-2 text-gray-400">
+                  <div className="flex justify-between">
+                    <span>Total Supply:</span>
+                    <span>50,000,000 SWHIT</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Price:</span>
+                    <span>0.0025 USDT (≈ {tokenPriceETH.toFixed(8)} ETH)</span>
+                  </div>
+                </div>
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              {/* Progress Bar */}
+              <div className="space-y-2">
+                <div className="flex justify-between text-sm text-gray-400">
+                  <span>Progress</span>
+                  <span>{progress}%</span>
+                </div>
+                <Progress value={progress} className="h-2" />
+                <div className="flex justify-between text-sm text-gray-400">
+                  <span>0 SWHIT</span>
+                  <span>50,000,000 SWHIT</span>
+                </div>
+              </div>
+
+              {/* Network Selection */}
+              <div className="space-y-2">
+                <label className="text-sm text-gray-400">Select Network</label>
+                <Select 
+                  value={selectedNetwork}
+                  onValueChange={setSelectedNetwork}
+                >
+                  <SelectTrigger className="bg-gray-800 border-gray-700">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="ethereum">Ethereum Network</SelectItem>
+                    <SelectItem value="linea">Linea Network</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Amount Input */}
+              <div className="space-y-2">
+                <label className="text-sm text-gray-400">Amount</label>
+                <div className="relative">
+                  <input
+                    type="number"
+                    className="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 text-white"
+                    placeholder="0.0"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value)}
+                  />
+                  <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
+                    <Ethereum className="w-4 h-4 text-gray-400" />
+                    <span className="text-gray-400">ETH</span>
+                  </div>
+                </div>
+                <div className="flex justify-between text-sm text-gray-400">
+                  <span>You will receive:</span>
+                  <span>{calculateTokens(amount)} SWHIT</span>
+                </div>
+              </div>
+
+              <Button className="w-full" size="lg">
+                Buy SWHIT Tokens
+              </Button>
+
+              <div className="text-sm text-gray-400 flex items-start gap-2">
+                <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <p>
+                  You can buy using Ethereum or Linea ETH. Connect your wallet to proceed with the purchase.
+                  Tokens will be automatically sent to your wallet after the purchase.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </main>
       <Footer />
