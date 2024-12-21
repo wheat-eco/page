@@ -1,37 +1,52 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shield, Zap, RefreshCw, Network, Users, Lock } from 'lucide-react'
+import { Shield, Zap, RefreshCw, Network, Users, Lock, Sprout, Clock, Coins } from 'lucide-react'
 
 export function FeaturesSection() {
   const features = [
     {
-      icon: <Shield className="w-10 h-10 mb-4 text-white/90" />,
-      title: "Decentralized and Transparent",
-      description: "Built on Linea, $SWHIT ensures fast, low-cost transactions while maintaining transparency."
+      icon: <Sprout className="w-10 h-10 mb-4 text-white/90" />,
+      title: "Digital Wheat Storage",
+      description: "Inspired by ancient practices, SWHIT reimagines wheat storage for the digital age, aiming for exponential long-term growth."
     },
     {
       icon: <Users className="w-10 h-10 mb-4 text-white/90" />,
-      title: "Community-Centric Approach",
-      description: "20% of our supply is reserved for airdrops and rewards, fostering an active and engaged community."
+      title: "Social Distribution Model",
+      description: "40% of tokens distributed through a unique social engagement model, fostering community growth from day one."
     },
     {
       icon: <RefreshCw className="w-10 h-10 mb-4 text-white/90" />,
-      title: "Sustainable Growth",
-      description: "With a fixed supply and structured allocation, $SWHIT is designed for long-term value creation."
+      title: "Deflationary Mechanics",
+      description: "1% burn on every transaction and up to 10% APY for staking, designed for long-term value appreciation."
     },
     {
       icon: <Lock className="w-10 h-10 mb-4 text-white/90" />,
-      title: "Locked Liquidity",
-      description: "A large percentage of liquidity is locked, ensuring stability and protecting investor interests."
+      title: "Long-Term Value Storage",
+      description: "30% of tokens locked in a 10-year linear release vault, ensuring stability and long-term growth."
     },
     {
       icon: <Network className="w-10 h-10 mb-4 text-white/90" />,
-      title: "Multi-Chain Future",
-      description: "Starting on Linea, we aim to expand $SWHIT's utility across other prominent blockchains like Aptos."
+      title: "Multi-Chain Presence",
+      description: "Available on Linea and SUI, with plans to develop the standalone WheatChain for optimized value storage."
     },
     {
       icon: <Zap className="w-10 h-10 mb-4 text-white/90" />,
-      title: "High Performance",
-      description: "Lightning-fast transactions with minimal fees and maximum efficiency."
+      title: "DeFi Integration",
+      description: "Yield farming, lending, and borrowing protocols to maximize value growth within the ecosystem."
+    },
+    {
+      icon: <Shield className="w-10 h-10 mb-4 text-white/90" />,
+      title: "Community Governance",
+      description: "DAO structure empowers token holders to shape the future of the Wheat-Sol ecosystem."
+    },
+    {
+      icon: <Clock className="w-10 h-10 mb-4 text-white/90" />,
+      title: "Intergenerational Wealth",
+      description: "Designed for multi-generational value storage and transfer, with smart contract-based inheritance mechanisms."
+    },
+    {
+      icon: <Coins className="w-10 h-10 mb-4 text-white/90" />,
+      title: "Ambitious Vision",
+      description: "Starting from a modest valuation with the long-term goal of surpassing Bitcoin in value and utility."
     }
   ]
 
@@ -39,7 +54,7 @@ export function FeaturesSection() {
     <section id="features" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 glow-text">
-          Why Choose WheatChain
+          Why Choose Wheat-Sol
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
