@@ -2,11 +2,31 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function TokenomicsSection() {
   const tokenomics = [
-    { label: "User Rewards Pool", value: "40%", description: "Released over time based on platform activity" },
-    { label: "Team and Advisors", value: "15%", description: "1-year vesting with 6-months cliff" },
-    { label: "Development Fund", value: "20%", description: "2-year vesting, released quarterly" },
-    { label: "Community Treasury", value: "15%", description: "Controlled by DAO governance" },
-    { label: "Presale", value: "10%", description: "2-month linear vesting after TGE" }
+    { 
+      label: "Social Distribution Pool", 
+      value: "40%", 
+      description: "Released through social tasks over 5 years" 
+    },
+    { 
+      label: "Long-Term Storage Vault", 
+      value: "30%", 
+      description: "10-year linear release for stability" 
+    },
+    { 
+      label: "Development Fund", 
+      value: "15%", 
+      description: "5-year vesting, released quarterly" 
+    },
+    { 
+      label: "Community Treasury", 
+      value: "10%", 
+      description: "Controlled by DAO governance" 
+    },
+    { 
+      label: "Ecosystem Growth", 
+      value: "5%", 
+      description: "Used for partnerships and marketing" 
+    }
   ]
 
   return (
@@ -18,7 +38,7 @@ export function TokenomicsSection() {
         <Card className="glass-card border-0">
           <CardContent className="p-6">
             <p className="text-white/80 text-lg mb-6">
-              Our tokenomics are designed to align with the long-term vision of WheatChain:
+              SWHIT has a total supply of 50,000,000,000 tokens, with an initial circulating supply of 500,000,000 (1%). Our tokenomics are designed for long-term value appreciation and community-driven growth:
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {tokenomics.map((item, index) => (
@@ -31,12 +51,22 @@ export function TokenomicsSection() {
                 </div>
               ))}
             </div>
-            <p className="text-white/80 text-lg mt-6">
-              Liquidity will be locked, and contracts renounced for enhanced investor trust.
-            </p>
-            <p className="text-white/80 text-lg mt-4">
-              Contract Renounced: <a href="https://lineascan.build/address/0x741f2fc08125a86d452d54ef77e24a9ca6da4cb2" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Lineascan</a>
-            </p>
+            <div className="mt-6 space-y-4">
+              <p className="text-white/80 text-lg">
+                SWHIT implements a 1% burn mechanism on every transaction and offers up to 10% APY for long-term holders through staking rewards.
+              </p>
+              <div className="space-y-2">
+                <p className="text-white/80 text-lg">
+                  Contract Addresses:
+                </p>
+                <p className="text-white/80 text-lg">
+                  Linea: <a href="https://lineascan.build/address/0x741f2fc08125a86d452d54ef77e24a9ca6da4cb2" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Lineascan</a>
+                </p>
+                <p className="text-white/80 text-lg">
+                  SUI: <a href="https://suiscan.xyz/mainnet/coin/0xe17180ee2271edd6f60d39e04d4fd7983d2e03d1cd908e1eee4eb812bab3929d::wheat_sol::WHEAT_SOL/txs" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Suiscan</a>
+                </p>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>
