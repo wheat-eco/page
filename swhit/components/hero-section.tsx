@@ -16,16 +16,16 @@ export function HeroSection() {
             className="mx-auto mb-8 wheat-icon"
           />
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text">
-            Wheat-Sol (SWHIT): Powering the Future of DeFi
+            Wheat-Sol (SWHIT): Sowing the Seeds of Digital Prosperity
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Experience the next generation of social engagement and decentralized finance with Wheat-Sol. Earn rewards, participate in governance, and shape the future of Web3 on the Linea blockchain.
+            Experience the future of long-term value storage with Wheat-Sol. Inspired by ancient wheat storage practices, SWHIT aims to surpass Bitcoin through innovative tokenomics, social distribution, and the development of WheatChain.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button className="bg-white text-black hover:bg-white/90">
-              <Link href="/buy">
-              Buy SWHIT
-                </Link>
+              <Link href="/social-app">
+                Join Social Distribution
+              </Link>
             </Button>
             <Button 
               variant="outline" 
@@ -38,11 +38,11 @@ export function HeroSection() {
             </Button>
           </div>
           <div className="flex justify-center gap-4 mt-8">
-            <a href="https://github.com/wheat-eco/wheat-eco" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/wheat-eco" target="_blank" rel="noopener noreferrer" 
                className="p-2 glass-card hover:bg-white/10 transition-colors">
               <GithubIcon className="w-6 h-6" />
             </a>
-            <a href="https://x.com/wheat_linea?t=El1Z9LruRi3hA7gfDx7Yew&s=09" target="_blank" rel="noopener noreferrer" 
+            <a href="https://x.com/wheat_linea?t=uYAmigt6Zsaks7p0NeofPw&s=09" target="_blank" rel="noopener noreferrer" 
                className="p-2 glass-card hover:bg-white/10 transition-colors">
               <Twitter className="w-6 h-6" />
             </a>
