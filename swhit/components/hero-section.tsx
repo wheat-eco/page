@@ -22,10 +22,11 @@ export function HeroSection() {
             Experience the future of long-term value storage with Wheat-Sol. Inspired by ancient wheat storage practices, SWHIT aims to surpass Bitcoin through innovative tokenomics, social distribution, and the development of WheatChain.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button className="bg-white text-black hover:bg-white/90">
-              <Link href="/social-app">
-                Join Social Distribution
-              </Link>
+            <Button 
+              className="bg-white text-black hover:bg-white/90"
+              onClick={() => window.open('https://t.me/wheatsol_bot/app', '_blank')}
+            >
+              Earn SWHIT Tokens
             </Button>
             <Button 
               variant="outline" 
