@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"; // Ensure this import path is correct
+import { Card, CardContent } from "@/components/ui/card";
 
 export function AboutSection() {
   return (
@@ -10,13 +10,13 @@ export function AboutSection() {
         <Card className="glass-card border-0">
           <CardContent className="p-6">
             <p className="text-white/80 text-lg leading-relaxed mb-4">
-              Wheat-Sol (SWHIT) is an innovative ERC-20 token designed to revolutionize social engagement and decentralized finance (DeFi) on the Linea blockchain. As the native cryptocurrency of the WheatChain ecosystem, SWHIT serves as the backbone for a user-centric platform that directly rewards participation and contribution.
+              Wheat-Sol (SWHIT) is a revolutionary blockchain-based platform designed to redefine the concept of long-term value storage in the digital age. Inspired by the timeless practice of storing wheat for future generations, SWHIT aims to create a digital asset that starts with a modest valuation but has the potential to surpass even Bitcoin in long-term value and utility.
             </p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
-              With a total supply of 500,000,000 SWHIT, the token powers a comprehensive reward system, governance mechanisms, and various DeFi features. Users can earn SWHIT through content creation, engagement, community challenges, and by providing liquidity to DeFi pools.
+              With a total supply of 50,000,000,000 SWHIT, our token serves as the backbone for a comprehensive ecosystem that includes a unique social distribution model, DeFi features, and community-driven governance. SWHIT is designed to appreciate significantly in value over time, combining deflationary tokenomics with yield generation mechanisms.
             </p>
             <p className="text-white/80 text-lg leading-relaxed">
-              SWHIT token holders can participate in platform governance, access premium features, use the token for tipping creators, stake for additional rewards, and leverage it within the ecosystem&apos;s DeFi protocols. As WheatChain evolves, SWHIT will play a crucial role in bridging social interaction with financial empowerment in the Web3 space.
+              As we develop towards our future WheatChain, SWHIT token holders will play a crucial role in shaping the platform's future through DAO governance, while benefiting from features such as staking rewards, DeFi integrations, and exclusive access to ecosystem services. Join us in our mission to create a new paradigm for intergenerational wealth preservation and growth in the Web3 space.
             </p>
           </CardContent>
         </Card>
@@ -24,3 +24,4 @@ export function AboutSection() {
     </section>
   );
 }
+
