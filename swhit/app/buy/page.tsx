@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { NavBar } from "@/components/nav-bar"
 import { Footer } from "@/components/footer"
-import { Github, Twitter, Send, ArrowRight, Wallet, Info, RefreshCcw } from 'lucide-react'
+import { Github, Twitter, Send, ArrowRight, Wallet, Info } from 'lucide-react'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -261,3 +261,4 @@ export default function BuyPage() {
   )
 }
 
+                        
