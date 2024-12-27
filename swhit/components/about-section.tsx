@@ -5,12 +5,12 @@ export function AboutSection() {
     <section id="about" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 glow-text">
-          About Wheat-Sol (SWHIT)
+          About WheatChain (SWHIT)
         </h2>
         <Card className="glass-card border-0">
           <CardContent className="p-6">
             <p className="text-white/80 text-lg leading-relaxed mb-4">
-              Wheat-Sol (SWHIT) is a revolutionary blockchain-based platform designed to redefine the concept of long-term value storage in the digital age. Inspired by the timeless practice of storing wheat for future generations, SWHIT aims to create a digital asset that starts with a modest valuation but has the potential to surpass even Bitcoin in long-term value and utility.
+              WheatChain (SWHIT) is a revolutionary blockchain-based platform designed to redefine the concept of long-term value storage in the digital age. Inspired by the timeless practice of storing wheat for future generations, SWHIT aims to create a digital asset that starts with a modest valuation but has the potential to surpass even Bitcoin in long-term value and utility.
             </p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               With a total supply of 50,000,000,000 SWHIT, our token serves as the backbone for a comprehensive ecosystem that includes a unique social distribution model, DeFi features, and community-driven governance. SWHIT is designed to appreciate significantly in value over time, combining deflationary tokenomics with yield generation mechanisms.
