@@ -19,7 +19,7 @@ export function HeroSection() {
             WheatChain (SWHIT): Sowing the Seeds of Digital Prosperity
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Experience the future of long-term value storage with Wheat-Sol. Inspired by ancient wheat storage practices, SWHIT aims to surpass Bitcoin through innovative tokenomics, social distribution, and the development of WheatChain.
+            Experience the future of long-term value storage with WheatChain. Inspired by ancient wheat storage practices, SWHIT aims to surpass Bitcoin through innovative tokenomics, social distribution, and the development of WheatChain.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button 

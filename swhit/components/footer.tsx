@@ -17,10 +17,10 @@ d grid-cols-1 md:grid-cols-4 gap-8">
                 height={32}
                 className="wheat-icon"
               />
-              <span className="text-lg font-bold">WHEAT-SOL</span>
+              <span className="text-lg font-bold">WheatChain</span>
             </Link>
             <p className="text-sm text-white/70">
-              Building the future of decentralized finance on Linea.
+              Building the future of decentralized finance.
             </p>
           </div>
           
@@ -62,7 +62,7 @@ d grid-cols-1 md:grid-cols-4 gap-8">
         </div>
         
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/70">
-          <p>&copy; {new Date().getFullYear()} WheatSol. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} WheatChain. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -9,10 +9,10 @@ import { BlogPostPreview } from "@/components/blog-post-preview"
 const recentPosts = [
   {
     id: 1,
-    title: "Wheat-Sol ($SWHIT): What We've Come to Do",
-    excerpt: "We are Wheat-Sol, and we're here to redefine the crypto landscape. We're not just another token – we're a utility coin with a clear mission and a commitment to longevity.",
+    title: "WheatChain ($SWHIT): What We've Come to Do",
+    excerpt: "We are WheatChain, and we're here to redefine the crypto landscape. We're not just another token – we're a utility coin with a clear mission and a commitment to longevity.",
     date: "December 5, 2024",
-    slug: "wheat-sol-what-weve-come-to-do"
+    slug: "wheatchain-what-weve-come-to-do"
   },
   // Add more blog posts here as they become available
 ]
@@ -24,10 +24,10 @@ export default function BlogsPage() {
       <main className="container mx-auto px-4 py-24 max-w-4xl">
         <header className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Wheat-Sol Blog
+            WheatChain Blog
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Stay updated with the latest news, announcements, and insights from the Wheat-Sol ecosystem
+            Stay updated with the latest news, announcements, and insights from the WheatChain ecosystem
           </p>
         </header>
 

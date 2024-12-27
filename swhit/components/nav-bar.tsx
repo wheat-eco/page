@@ -15,7 +15,7 @@ export function NavBar() {
               height={40}
               className="wheat-icon"
             />
-            <span className="text-xl font-bold glow-text">WHEAT-SOL</span>
+            <span className="text-xl font-bold glow-text">WheatChain</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

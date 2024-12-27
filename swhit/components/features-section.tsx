@@ -36,7 +36,7 @@ export function FeaturesSection() {
     {
       icon: <Shield className="w-10 h-10 mb-4 text-white/90" />,
       title: "Community Governance",
-      description: "DAO structure empowers token holders to shape the future of the Wheat-Sol ecosystem."
+      description: "DAO structure empowers token holders to shape the future of the WheatChain ecosystem."
     },
     {
       icon: <Clock className="w-10 h-10 mb-4 text-white/90" />,
@@ -54,7 +54,7 @@ export function FeaturesSection() {
     <section id="features" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 glow-text">
-          Why Choose Wheat-Sol
+          Why Choose WheatChain 
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (

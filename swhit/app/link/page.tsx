@@ -21,7 +21,7 @@ export default function LinksPage() {
           />
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
-          Wheat-Sol ($SWHIT)
+          WheatChain ($SWHIT)
         </h1>
         <p className="text-lg text-gray-400 text-center mb-8 max-w-md">
           Revolutionizing social engagement and DeFi on Linea blockchain

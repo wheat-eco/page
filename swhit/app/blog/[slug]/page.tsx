@@ -16,18 +16,18 @@ interface BlogPosts {
 }
 
 const blogPosts: BlogPosts = {
-  "wheat-sol-what-weve-come-to-do": {
-    title: "Wheat-Sol ($SWHIT): Building Trust and Revolutionizing DeFi",
+  "wheatchain-what-weve-come-to-do": {
+    title: "WheatChain ($SWHIT): Building Trust and Revolutionizing DeFi",
     content: `
       <div class="space-y-8">
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-white">Introducing Wheat-Sol: A Commitment to Transparency and Innovation</h2>
-          <p class="text-gray-300">At Wheat-Sol, we understand that trust is the foundation of any successful blockchain project. That's why we're committed to complete transparency in everything we do. From our code to our communications, we believe in open, honest dialogue with our community.</p>
+          <h2 class="text-2xl font-bold text-white">Introducing WheatChain: A Commitment to Transparency and Innovation</h2>
+          <p class="text-gray-300">At WheatChain, we understand that trust is the foundation of any successful blockchain project. That's why we're committed to complete transparency in everything we do. From our code to our communications, we believe in open, honest dialogue with our community.</p>
         </section>
 
         <section class="space-y-6">
           <h3 class="text-xl font-semibold text-white">Our Vision: Beyond Just Another Token</h3>
-          <p class="text-gray-300">Wheat-Sol ($SWHIT) isn't just another token or a simple airdrop. We're building a comprehensive ecosystem that bridges social engagement with decentralized finance (DeFi). Here's how we're different:</p>
+          <p class="text-gray-300">WheatChain ($SWHIT) isn't just another token or a simple airdrop. We're building a comprehensive ecosystem that bridges social engagement with decentralized finance (DeFi). Here's how we're different:</p>
           <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
             <li>Transparent Development: Our codebase is open-source, allowing for community review and contribution.</li>
             <li>Regular Updates: We commit to weekly development updates, keeping our community informed of our progress.</li>
@@ -63,7 +63,7 @@ const blogPosts: BlogPosts = {
           <h3 class="text-xl font-semibold text-white">Our Roadmap: Committed to Delivery</h3>
           <p class="text-gray-300">We believe in setting realistic goals and consistently delivering on our promises. Here's a glimpse of our upcoming milestones:</p>
           <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
-            <li>Q1 2025: Launch of Wheat-Sol social engagement platform beta</li>
+            <li>Q1 2025: Launch of WheatChain social engagement platform beta</li>
             <li>Q2 2025: Integration of DeFi features including staking and yield farming</li>
             <li>Q3 2025: Introduction of governance mechanisms for community-driven decision making</li>
             <li>Q4 2025: Initiation of WheatChain testnet, our proprietary blockchain solution</li>
@@ -72,8 +72,8 @@ const blogPosts: BlogPosts = {
         </section>
 
         <section class="space-y-4">
-          <h3 class="text-xl font-semibold text-white">Join the Wheat-Sol Community</h3>
-          <p class="text-gray-300">We invite you to be part of our journey. Whether you're a developer, investor, or crypto enthusiast, there's a place for you in the Wheat-Sol ecosystem. Here's how you can get involved:</p>
+          <h3 class="text-xl font-semibold text-white">Join the WheatChain Community</h3>
+          <p class="text-gray-300">We invite you to be part of our journey. Whether you're a developer, investor, or crypto enthusiast, there's a place for you in the WheatChain ecosystem. Here's how you can get involved:</p>
           <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
             <li>Join our Telegram group for real-time updates and community discussions</li>
             <li>Follow us on Twitter for the latest news and announcements</li>
@@ -92,7 +92,7 @@ const blogPosts: BlogPosts = {
 
         <section class="space-y-4">
           <h3 class="text-xl font-semibold text-white">Conclusion: Building a Trustworthy Future Together</h3>
-          <p class="text-gray-300">At Wheat-Sol, we're not just building a platform; we're cultivating a community based on trust, transparency, and shared success. We know that earning your trust is an ongoing process, and we're committed to that journey every step of the way.</p>
+          <p class="text-gray-300">At WheatChain, we're not just building a platform; we're cultivating a community based on trust, transparency, and shared success. We know that earning your trust is an ongoing process, and we're committed to that journey every step of the way.</p>
           <p class="text-gray-300">Join us as we work towards a more equitable, transparent, and rewarding future in decentralized finance. Together, we can redefine what's possible in the world of crypto.</p>
           <p class="text-blue-400">#WheatSol #SWHIT #TrustInDeFi #CommunityDriven</p>
         </section>
