@@ -5,20 +5,20 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'WheatSol - Building the Future of WheatChain',
-  description: 'Revolutionizing DeFi on Linea with sustainable, efficient, and secure blockchain solutions. Join us in shaping the future of decentralized finance.',
+  title: 'WheatChain (SWHIT) - Cultivating Digital Prosperity',
+  description: 'WheatChain is a groundbreaking multi-chain digital asset protocol revolutionizing value creation and distribution in Web3. Join us in shaping the future of decentralized finance across multiple blockchains.',
   metadataBase: new URL('https://wheatchain.xyz'),
   openGraph: {
-    title: 'WheatSol - Building the Future of WheatChain',
-    description: 'Revolutionizing DeFi on Linea with sustainable, efficient, and secure blockchain solutions. Join us in shaping the future of decentralized finance.',
-    url: 'https://swhit.vercel.app',
-    siteName: 'WheatSol',
+    title: 'WheatChain (SWHIT) - Cultivating Digital Prosperity',
+    description: 'WheatChain is a groundbreaking multi-chain digital asset protocol revolutionizing value creation and distribution in Web3. Join us in shaping the future of decentralized finance across multiple blockchains.',
+    url: 'https://wheatchain.xyz',
+    siteName: 'WheatChain',
     images: [
       {
-        url: '/wheatsol.jpg',
-        width: 800,
-        height: 800,
-        alt: 'WheatSol Logo',
+        url: '/wheatchain.png',
+        width: 100,
+        height: 100,
+        alt: 'WheatChain Logo',
       },
     ],
     locale: 'en_US',
@@ -26,18 +26,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WheatSol - Building the Future of WheatChain',
-    description: 'Revolutionizing DeFi on Linea with sustainable, efficient, and secure blockchain solutions.',
+    title: 'WheatChain (SWHIT) - Cultivating Digital Prosperity',
+    description: 'A multi-chain digital asset protocol revolutionizing value creation and distribution in Web3.',
     images: ['/wheatsol.jpg'],
-    creator: '@wheat_linea',
+    creator: '@WheatChain',
   },
   icons: {
-    icon: '/wheatsol.jpg',
-    shortcut: '/wheatsol.jpg',
-    apple: '/wheatsol.jpg',
+    icon: '/wheatchain.png',
+    shortcut: '/wheatchain.png',
+    apple: '/wheatchain.png',
     other: {
       rel: 'apple-touch-icon-precomposed',
-      url: '/wheatsol.jpg',
+      url: '/wheatchain.png',
     },
   },
 }
@@ -53,4 +53,3 @@ export default function RootLayout({
     </html>
   )
 }
-
