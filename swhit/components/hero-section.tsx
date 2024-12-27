@@ -16,7 +16,7 @@ export function HeroSection() {
             className="mx-auto mb-8 wheat-icon"
           />
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text">
-            Wheat-Sol (SWHIT): Sowing the Seeds of Digital Prosperity
+            WheatChain (SWHIT): Sowing the Seeds of Digital Prosperity
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
             Experience the future of long-term value storage with Wheat-Sol. Inspired by ancient wheat storage practices, SWHIT aims to surpass Bitcoin through innovative tokenomics, social distribution, and the development of WheatChain.
