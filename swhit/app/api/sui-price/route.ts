@@ -1,11 +1,12 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextResponse } from 'next/server'
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function GET() {
   try {
     const response = await fetch('https://api.diadata.org/v1/assetQuotation/Sui/0x2::sui::SUI')
     const data = await response.json()
-    res.status(200).json({ price: data.Price, lastUpdate: data.Time })
-  } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch Sui price' })
+    return NextResponse.json({ price: data.Price, lastUpdate: data.Time })
+  } catch (err) {
+    return NextResponse.json({ error: 'Failed to fetch Sui price' }, { status: 500 })
   }
 }
+
