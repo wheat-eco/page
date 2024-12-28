@@ -165,7 +165,7 @@ export default function BuyPage() {
                   />
                   <div className="flex justify-between text-sm">
                     <span>1 SWHIT = {(swhitPrice / suiPrice).toFixed(10)} SUI</span>
-                    <Link href="https://suiscan.xyz/mainnet/coin/0xa8ec5d3be0f87c702d857be8d0943c4539131dcaeca521fcda3891e2651bdf17" target="_blank" className="text-primary hover:underline">
+                    <Link href="https://suiscan.xyz/mainnet/coin/0x4eaaef2c74b1793e1c63e5f3843087921aebc815a36e9993958e199885c327b2::swhit::SWHIT/txs" target="_blank" className="text-primary hover:underline">
                       View Contract
                     </Link>
                   </div>
