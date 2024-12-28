@@ -2,30 +2,35 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function TokenomicsSection() {
   const tokenomics = [
-    { 
-      label: "Social Distribution Pool", 
-      value: "40%", 
-      description: "Released through social tasks over 5 years" 
+    {
+      label: "Community Rewards and Ecosystem Growth",
+      value: "40%",
+      description: "Linear vesting over 6 years, released monthly"
     },
-    { 
-      label: "Long-Term Storage Vault", 
-      value: "30%", 
-      description: "10-year linear release for stability" 
+    {
+      label: "Development Fund",
+      value: "25%",
+      description: "Linear vesting over 5 years, released quarterly"
     },
-    { 
-      label: "Development Fund", 
-      value: "15%", 
-      description: "5-year vesting, released quarterly" 
+    {
+      label: "Team and Advisors",
+      value: "15%",
+      description: "6-month cliff, then linear vesting over 4 years, released semi-annually"
     },
-    { 
-      label: "Community Treasury", 
-      value: "10%", 
-      description: "Controlled by DAO governance" 
+    {
+      label: "Treasury Reserve",
+      value: "10%",
+      description: "Linear vesting over 10 years, released annually"
     },
-    { 
-      label: "Ecosystem Growth", 
-      value: "5%", 
-      description: "Used for partnerships and marketing" 
+    {
+      label: "Initial Circulation (DEX Liquidity + Airdrop)",
+      value: "5%",
+      description: "Immediately available at launch"
+    },
+    {
+      label: "Strategic Partnerships",
+      value: "5%",
+      description: "Linear vesting over 3 years, released quarterly"
     }
   ]
 
@@ -38,7 +43,7 @@ export function TokenomicsSection() {
         <Card className="glass-card border-0">
           <CardContent className="p-6">
             <p className="text-white/80 text-lg mb-6">
-              SWHIT has a total supply of 50,000,000,000 tokens, with an initial circulating supply of 500,000,000 (1%). Our tokenomics are designed for long-term value appreciation and community-driven growth:
+              SWHIT has a total supply of 100,000,000,000 tokens distributed across multiple chains (Sui, Aptos, and future TON network). Our tokenomics are designed for long-term value appreciation and multi-chain ecosystem growth:
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {tokenomics.map((item, index) => (
@@ -53,17 +58,20 @@ export function TokenomicsSection() {
             </div>
             <div className="mt-6 space-y-4">
               <p className="text-white/80 text-lg">
-                SWHIT implements a 1% burn mechanism on every transaction and offers up to 10% APY for long-term holders through staking rewards.
+                SWHIT is designed to facilitate seamless value transfer and community engagement across multiple high-performance blockchains.
               </p>
               <div className="space-y-2">
                 <p className="text-white/80 text-lg">
                   Contract Addresses:
                 </p>
                 <p className="text-white/80 text-lg">
-                  Linea: <a href="https://lineascan.build/address/0x741f2fc08125a86d452d54ef77e24a9ca6da4cb2" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Lineascan</a>
+                  SUI: <a href="https://suiscan.xyz/mainnet/coin/0x4eaaef2c74b1793e1c63e5f3843087921aebc815a36e9993958e199885c327b2::swhit::SWHIT//txs" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Suiscan</a>
                 </p>
                 <p className="text-white/80 text-lg">
-                  SUI: <a href="https://suiscan.xyz/mainnet/coin/0xe17180ee2271edd6f60d39e04d4fd7983d2e03d1cd908e1eee4eb812bab3929d::wheat_sol::WHEAT_SOL/txs" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">View on Suiscan</a>
+                  Aptos: <span className="text-gray-400">Coming soon</span>
+                </p>
+                <p className="text-white/80 text-lg">
+                  TON: <span className="text-gray-400">Coming soon</span>
                 </p>
               </div>
             </div>
@@ -73,4 +81,3 @@ export function TokenomicsSection() {
     </section>
   )
 }
-
