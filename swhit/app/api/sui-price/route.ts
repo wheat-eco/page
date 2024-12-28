@@ -6,7 +6,7 @@ export async function GET() {
     const data = await response.json()
     return NextResponse.json({ price: data.Price, lastUpdate: data.Time })
   } catch (err) {
-    return NextResponse.json({ error: 'Failed to fetch Sui price' }, { status: 500 })
+    return NextResponse.json({ error: `Failed to fetch Sui price: ${err instanceof Error ? err.message : 'Unknown error'}` }, { status: 500 })
   }
 }
 
